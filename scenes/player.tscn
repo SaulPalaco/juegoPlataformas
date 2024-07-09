@@ -77,6 +77,7 @@ _data = {
 size = Vector2(18, 22)
 
 [node name="Player" type="CharacterBody2D"]
+position = Vector2(36, 45)
 script = ExtResource("1_twh0x")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -86,8 +87,13 @@ libraries = {
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-texture = ExtResource("9_ce66f")
+texture = ExtResource("1_nbtwr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -1)
 shape = SubResource("RectangleShape2D_2xayp")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = -1000
+limit_right = 1000
